@@ -42,7 +42,9 @@ function Quiz() {
         ):(
         <>
         <div className='question'>
-            <span id='question-number'>{currentQuestion+1}.</span>
+            <div className='que-num'>
+              <span id='question-number'>{currentQuestion+1}.</span>
+            </div>
             <span id='question-txt'>{QuizData[currentQuestion].question}</span>
         </div>
         <div className='option-container'>
